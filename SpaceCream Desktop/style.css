@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --ff-header: 'Staatliches';
+  --ff-text: 'Roboto';
+  --ff-footer: 'open-sans';
+
+  --hue:244; /*317,5*/
+  --bg-header:hsla(var(--hue), 17%, 62%);  /* bg left   */
+  --bg-heading: hsla(var(--hue), 18%, 79%); /* bg h1  */
+  --bg-primary: hsla(var(--hue), 100%, 97%); /* bg right  */
+
+  --fc-primary: hsla(0, 0%, 100%, 1);
+  --fc-footer: hsla(232, 17%, 35%, 1);
+
+  font-size: 62,5%;
+  --fs-header: 48px;  /*4.8rem;*/
+  --fs-text: 24px; /* 2.4rem;*/
+  --fs-footer: 14px;  /*1.4rem;*/
+}
+
+.right{
+  padding-top: 64px;
+  padding-left: 98px;
+  padding-right: 81px;
+
+  
+  animation: topdown 1000ms;
+  
+  display: grid;
+  gap: 32px;
+  grid-template-areas: "A B C"
+  "D E F";
+}
+
+  .right div:nth-child(1) {
+    grid-area: A;
+  }
+
+  .right div:nth-child(2) {
+    grid-area: B;
+  }
+
+  .right div:nth-child(3){
+    grid-area: C;
+  }
+
+  .right div:nth-child(4){
+    grid-area: D;
+  }
+
+  .right div:nth-child(5){
+    grid-area: E;
+  }
+
+  .right div:nth-child(6){
+    grid-area: F;
+  }
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+      
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+    
+}
+}
+
+body{
+  margin: auto;
+  display: flex;
+  left: 0px;
+  top: 0px;
+  color: var(--fc-primary);
+  padding-left: 400px;
+}
+
+.left{
+  padding-top: 32px;
+  width: 377px;
+  left: 0px;
+  top: 0px;
+  background-color: var(--bg-header);
+  color: var(--fc-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  text-transform: uppercase;
+  font-family: 'Staatliches';
+  font-size: var(--fs-header);
+  width: 100%;
+  background: #CBC0D3;
+  margin-top: 53px;
+  display: flex;
+  justify-content: center;
+}
+.teste{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img:hover {
+  opacity: 0.7;
+  scale: 1.05;
+}
+
+
+footer{
+  height: 28px;
+  width: 592px;
+
+
+  padding-left: 164px;
+  padding-bottom: 48px;
+  padding-right: 147px;
+  padding-top:50px;
+
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 700;
+
+
+  color: #4A4E69;
+
+}
+
+p{
+  margin-top: 52px;
+  margin-left: 54px;
+  margin-right: 48px;
+  margin-bottom: 125px;
+
+  font-family: 'Roboto';
+  font-size: 24px;
+  line-height: 20px;
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
